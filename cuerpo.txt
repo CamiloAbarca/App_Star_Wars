@@ -1,0 +1,194 @@
+<!--
+        <section id="level1to5">
+            <div class="container">
+                
+                <div class="d-flex flex-column gap-3">
+                    <div class="d-flex gap-3">
+                        <div class="card">
+                            <div class="content">
+                                <div class="title">
+                                    <div class="icon"></div>En esta sección...
+                                </div>
+                                <div class="description">Encontrarás información sobre los personajes más populares de
+                                    las
+                                    películas.</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="content">
+                                <div class="title">
+                                    <div class="icon"></div>C-3PO
+                                </div>
+                                <div class="description">Estatura: 167 cm. Peso: 75 kg.</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="content">
+                                <div class="title">
+                                    <div class="icon"></div>Darth Vader
+                                </div>
+                                <div class="description">Estatura: 202 cm. Peso: 136 kg.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-3">
+                        <div class="card">
+                            <div class="content">
+                                <div class="title">
+                                    <div class="icon"></div>R2-D2
+                                </div>
+                                <div class="description">Estatura: 96 cm. Peso: 32 kg.</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="content">
+                                <div class="title">
+                                    <div class="icon"></div>Leia Organa
+                                </div>
+                                <div class="description">Estatura: 150 cm. Peso: 49 kg.</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="content">
+                                <div class="title">
+                                    <div class="icon"></div>Luke Skywalker
+                                </div>
+                                <div class="description">Estatura: 172 cm. Peso: 77 kg.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="level6to10">
+            <div class="container">
+                <div class="timeline">
+                    <div class="timeline-text">6 - 10</div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="d-flex flex-column gap-3">
+                    <div class="d-flex gap-3">
+                        <div class="card">
+                            <div class="content">
+                                <div class="title">
+                                    <div class="icon"></div>En esta sección...
+                                </div>
+                                <div class="description">Encontrarás información sobre los personajes más populares de
+                                    las
+                                    películas.</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="content">
+                                <div class="title">
+                                    <div class="icon"></div>C-3PO
+                                </div>
+                                <div class="description">Estatura: 167 cm. Peso: 75 kg.</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="content">
+                                <div class="title">
+                                    <div class="icon"></div>Darth Vader
+                                </div>
+                                <div class="description">Estatura: 202 cm. Peso: 136 kg.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-3">
+                        <div class="card">
+                            <div class="content">
+                                <div class="title">
+                                    <div class="icon"></div>R2-D2
+                                </div>
+                                <div class="description">Estatura: 96 cm. Peso: 32 kg.</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="content">
+                                <div class="title">
+                                    <div class="icon"></div>Leia Organa
+                                </div>
+                                <div class="description">Estatura: 150 cm. Peso: 49 kg.</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="content">
+                                <div class="title">
+                                    <div class="icon"></div>Luke Skywalker
+                                </div>
+                                <div class="description">Estatura: 172 cm. Peso: 77 kg.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="level11to15">
+            <div class="container">
+                <div class="timeline">
+                    <div class="timeline-text">11 - 15</div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="d-flex flex-column gap-3">
+                    <div class="d-flex gap-3">
+                        <div class="card">
+                            <div class="content">
+                                <div class="title">
+                                    <div class="icon"></div>En esta sección...
+                                </div>
+                                <div class="description">Encontrarás información sobre los personajes más populares de
+                                    las
+                                    películas.</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="content">
+                                <div class="title">
+                                    <div class="icon"></div>C-3PO
+                                </div>
+                                <div class="description">Estatura: 167 cm. Peso: 75 kg.</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="content">
+                                <div class="title">
+                                    <div class="icon"></div>Darth Vader
+                                </div>
+                                <div class="description">Estatura: 202 cm. Peso: 136 kg.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-3">
+                        <div class="card">
+                            <div class="content">
+                                <div class="title">
+                                    <div class="icon"></div>R2-D2
+                                </div>
+                                <div class="description">Estatura: 96 cm. Peso: 32 kg.</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="content">
+                                <div class="title">
+                                    <div class="icon"></div>Leia Organa
+                                </div>
+                                <div class="description">Estatura: 150 cm. Peso: 49 kg.</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="content">
+                                <div class="title">
+                                    <div class="icon"></div>Luke Skywalker
+                                </div>
+                                <div class="description">Estatura: 172 cm. Peso: 77 kg.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        -->

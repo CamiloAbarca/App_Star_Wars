@@ -1,0 +1,134 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.container-section {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+}
+
+.container {
+    margin-top:3%;
+    display: flex;
+    align-items: start;
+}
+
+.timeline {
+    position: relative;
+    width: 2px;
+    background-color: #e0e0e0;
+    height: 100%;
+    margin-right: 20px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    background-color: #ffcc00;
+    border-radius: 50%;
+}
+
+.timeline-text {
+    position: absolute;
+    top: 0;
+    left: -30px;
+    font-size: 12px;
+    color: #333;
+}
+
+vertical-line {
+    width: 2px;
+    background-color: #e0e0e0;
+    height: 100%;
+    margin-right: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+}
+
+.card .icon {
+    background-color: #ff6b6b;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff6b6b;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.card .content {
+    display: flex;
+    flex-direction: column;
+}
+
+.card .content .title {
+    font-weight: bold;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.card .content .description {
+    margin: 5px 0 0 0;
+    color: #666;
+}
+
+/* Media queries for responsiveness */
+
+/* For screens smaller than 768px (tablets and mobiles) */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .timeline {
+        width: 100%;
+        height: 2px;
+        margin-right: 0;
+    }
+    .vertical-line {
+        width: 100%;
+        height: 2px;
+        margin-right: 0;
+    }
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* For screens smaller than 480px (mobiles) */
+@media (max-width: 480px) {
+    .card {
+        padding: 10px;
+    }
+    .card .content .title {
+        font-size: 14px;
+    }
+    .card .content .description {
+        font-size: 12px;
+    }
+}
