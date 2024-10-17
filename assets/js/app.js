@@ -1,70 +1,69 @@
 
-class Person {
-
-  constructor(nombre, peso, altura) {
+class Personaje {
+  constructor(nombre, altura, masa) {
     this.nombre = nombre;
-    this.peso = peso;
     this.altura = altura;
+    this.masa = masa;
+  }
+
+  mostrarInformacion() {
+    console.log('')
+    console.log('Información del personaje:');
+    console.log(`Nombre: ${this.nombre}`);
+    console.log(`Altura: ${this.altura} cm`);
+    console.log(`Masa: ${this.masa} kg`);
+
   }
 }
 
-const persons = []
-const appElement = document.getElementById('app');
-
-for (var i = 1; i < 6; i++) {
-  const personId = i;
-  fetch(`https://swapi.dev/api/people/${personId}/`)
-    .then(response => response.json())
-    .then(data => {
-      const person = new Person(data.name, data.mass, data.height);
-      persons.push(person); // Agrega el nombre al arreglo
-    })
-    .catch(error => console.error('Error:', error));
-}
-
-
-
-const nameElement = document.getElementById('name');
-const pesoElement = document.getElementById('peso');
-const alturaElement = document.getElementById('altura');
-
-//console.log(persons[1])
-
-//ssnameElement.textContent = persons[0]
-
-//nameElement.textContent = 
-
-
-/*
-class Person {
-
-  constructor(nombre, peso, altura) {
-      this.nombre = nombre;
-      this.peso = peso;
-      this.altura = altura;
+class PersonajeStarWars extends Personaje {
+  constructor(nombre, altura, masa) {
+    super(nombre, altura, masa);
   }
 }
 
-const a = []; // Inicializa un arreglo vacío para almacenar los nombres
+async function obtenerPersonaje(id) {
+  try {
+    const respuesta = await fetch(`https://swapi.dev/api/people/${id}/`);
 
-const promises = []; // Inicializa un arreglo para almacenar las promesas
+    if (!respuesta.ok) {
+      throw new Error('Error: ' + respuesta.status);
+    }
 
-for (var i = 1; i < 6; i++) {
-    const personId = i;
-    const promise = fetch(`https://swapi.dev/api/people/${personId}/`)
-  .then(response => response.json())
-  .then(data =>{
-    const person = new Person(data.name, data.mass, data.height);
-    return person.nombre; // Retorna el nombre
-  })
-  .catch(error => console.error('Error:', error));
-  promises.push(promise); // Agrega la promesa al arreglo
+    const personajeData = await respuesta.json();
+    return new PersonajeStarWars(personajeData.name, personajeData.height, personajeData.mass);
+
+  } catch (error) {
+    console.error('Hubo un problema con la solicitud a la API:', error);
+  }
 }
 
-Promise.all(promises).then(nombres => {
-  a = nombres; // Asigna el arreglo de nombres a la variable "a"
-  console.log(a); // Imprime el arreglo de nombres
-});
-*/
+async function obtenerPersonajes(inicio) {
+  const partida = inicio
+  const termino = parseInt(inicio) + 5
+  const personaPromise = [];
+
+  for (let i = partida; i < termino; i++) {
+    personaPromise.push(obtenerPersonaje(i));
+  }
+
+  const personajes = await Promise.all(personaPromise);
+
+  for (let i = 0; i < 5; i++) {
+    const personajeSelected = personajes[i];
+
+    if (personajeSelected) {
+      personajeSelected.mostrarInformacion();
+    } else {
+      console.log('El personaje no se encontró.');
+    }
+  }
+}
+
+// Ejecutamos la función para obtener personajes
+//obtenerPersonajes(1, 5);
+//obtenerPersonajes(6, 10);
+//obtenerPersonajes(11, 15);
 
 
+//TODO: falta controlar "unknown" en parametros recibidos.
