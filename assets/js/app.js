@@ -6,12 +6,15 @@ class Personaje {
     this.masa = masa;
   }
 
-  mostrarInformacion() {
-    console.log('')
-    console.log('Información del personaje:');
-    console.log(`Nombre: ${this.nombre}`);
-    console.log(`Altura: ${this.altura} cm`);
-    console.log(`Masa: ${this.masa} kg`);
+  mostrarInformacion(id) {
+    let info = `<div class="content">
+                <h3>Información del personaje:</h3>`;
+    info += `<p>Nombre: ${this.nombre}</p>`;
+    info += `<p>Altura: ${this.altura} cm Peso: ${this.masa === 'unknown' ? 'no disponible' : `${this.masa} kg`}</p>
+            </div>`;
+
+    const contenedor = document.querySelector(`#bloque${Math.ceil(id / 5)} .personajes`);
+    contenedor.innerHTML += info;
 
   }
 }
@@ -53,17 +56,9 @@ async function obtenerPersonajes(inicio) {
     const personajeSelected = personajes[i];
 
     if (personajeSelected) {
-      personajeSelected.mostrarInformacion();
+      personajeSelected.mostrarInformacion(inicio);
     } else {
       console.log('El personaje no se encontró.');
     }
   }
 }
-
-// Ejecutamos la función para obtener personajes
-//obtenerPersonajes(1, 5);
-//obtenerPersonajes(6, 10);
-//obtenerPersonajes(11, 15);
-
-
-//TODO: falta controlar "unknown" en parametros recibidos.
