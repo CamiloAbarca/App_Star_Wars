@@ -10,38 +10,43 @@
 </head>
 
 <body>
-    <div class="timeline">
-        <div class="timeline-item" id="bloque1">
-            <div class="time-range">1 - 5</div>
-            <div class="content">
-                <h3>En esta sección...</h3>
-                <p>Encontrarás información sobre los personajes más populares de las películas.</p>
-            </div>
-            <div class="personajes"></div>
+    <div class="title">
+        <div class="title-content">
+            <h1>Dimensiones de la vida real de los personajes de Star Wars.</h1>
         </div>
-        <div class="timeline-item" id="bloque2">
-            <div class="time-range">6 - 10</div>
-            <div class="content">
-                <h3>En esta sección...</h3>
-                <p>Encontrarás información sobre personajes secundarios importantes.</p>
-            </div>
-            <div class="personajes"></div>
-        </div>
-        <div class="timeline-item" id="bloque3">
-            <div class="time-range">11 - 15</div>
-            <div class="content">
-                <h3>En esta sección...</h3>
-                <p>Encontrarás otros personajes significativos.</p>
-            </div>
-            <div class="personajes"></div>
-        </div>
-        <div class="timeline-item" id="bloque3">
-            <div class="time-range">11 - 15</div>
-            <div class="content">
-                <button onclick="obtenerPersonajes(1, 5)">Llamar 1-5</button>
-                <button onclick="obtenerPersonajes(6, 10)">Llamar 6-10</button>
-                <button onclick="obtenerPersonajes(11, 15)">Llamar 11-15</button>
-            </div>
+    </div>
+    <div class="info">
+        <div class="timeline">
+                <div class="timeline-item" id="bloque1">
+                    <div class="time-range">1 - 5</div>
+                    <div class="content" onclick="togglePersonajes(1)">
+                        <h3>En esta sección...</h3>
+                        <p>Encontrarás información sobre los personajes más populares de las películas.</p>
+                    </div>
+                    <div class="personajes"></div>
+                </div>
+
+            
+                <div class="timeline-item" id="bloque2">
+                    <div class="time-range">6 - 11</div>
+                    <div class="content" onclick="togglePersonajes(6)">
+                        <h3>En esta sección...</h3>
+                        <p>Encontrarás información sobre personajes secundarios importantes.</p>
+                    </div>
+                    <div class="personajes"></div>
+                </div>
+            </button>
+
+            
+                <div class="timeline-item" id="bloque3">
+                    <div class="time-range">12 - 17</div>
+                    <div class="content" onclick="togglePersonajes(12)">
+                        <h3>En esta sección...</h3>
+                        <p>Encontrarás otros personajes significativos.</p>
+                    </div>
+                    <div class="personajes"></div>
+                </div>
+            
         </div>
     </div>
 </body>
