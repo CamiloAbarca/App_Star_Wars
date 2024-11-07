@@ -28,17 +28,17 @@
 
 .personajes {
     display: flex;
-    flex-wrap: wrap; /* Permite que los elementos se ajusten en varias filas */
-    gap: 10px; /* Espacio entre los personajes */
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .personajes .content {
-    flex: 1 0 48%; /* Dos personajes en la primera fila (48% + 48% = 96%) */
-    box-sizing: border-box; /* Incluye padding y borde en el ancho total */
+    flex: 1 0 48%;
+    box-sizing: border-box;
 }
 
 .personajes .content:nth-child(n+3) {
-    flex: 1 0 30%; /* Tres personajes en la segunda fila (30% + 30% + 30% = 90%) */
+    flex: 1 0 30%;
 }
 
 .timeline {
@@ -80,12 +80,12 @@
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: 300px; /* Ancho inicial */
-    transition: width 0.3s ease; /* Transición suave al cambiar el ancho */
+    width: 300px;
+    transition: width 0.3s ease;
 }
 
 .timeline-item .content:hover {
-    width: 800px; /* Ancho al pasar el mouse */
+    width: 800px;
 }
 
 
@@ -141,6 +141,6 @@
 
 @media (max-width: 600px) {
     .personajes .content {
-        flex: 1 0 100%; /* En pantallas pequeñas, un personaje por fila */
+        flex: 1 0 100%;
     }
 }
